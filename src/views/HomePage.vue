@@ -1,5 +1,12 @@
 <script setup></script>
 
 <template>
-  <h1 class="text-6xl font-thin text-slate-800">I'm the Home Page</h1>
+  <div>
+    <img class="logo" src="logo.svg" alt="logo" />
+    <h1 class="title">Trivia-Tastic</h1>
+    <img class="logo" src="logo.svg" alt="logo" />
+  </div>
+  <div>
+    <div v-for="n in 24" :key="n" class="category">Category - {{ n }}</div>
+  </div>
 </template>
